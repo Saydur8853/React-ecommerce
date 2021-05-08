@@ -1,14 +1,15 @@
 import React, { useContext, useState, useRef } from 'react'
-import {useParams} from 'react-router-dom'
+import {useParams, Link} from 'react-router-dom'
 import { DataContext } from './DataProvider'
 import Colors from './Colors'
 import Sizes from './Sizes'
 import DetailsThumb from './DetailsThumb'
 
-
 export default function Details() {
     const {id} = useParams();
-    const [products] = useContext(DataContext)
+    const value = useContext(DataContext)
+    const [products] = value.products
+    const addCart = value.addCart
     const [index, setIndex] = useState(0)
     const imgDiv = useRef();
 
@@ -41,7 +42,7 @@ export default function Details() {
                             <p>{product.description}</p>
                             <p>{product.content}</p>
                             <DetailsThumb images={ product.images} setIndex={setIndex}/>
-                            <button className= "cart"> Add to cart </button>
+                            <Link to="/cart" className= "cart" onClick = {() =>addCart(product._id)}> Add to cart </Link>
                         </div>
                         
                     </div>

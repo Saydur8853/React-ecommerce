@@ -54,8 +54,21 @@ ul li{
   display: none;
 }
 
-/*carousel*/
+.cart-icon{
+  position: relative;
+  margin-right: 15px;
+}
 
+.cart-icon span{
+  background: crimson;
+  border-radius: 20px;
+  color: white;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 10px;
+  padding: 5px;
+}
 
 /*PRODUCT*/
 
@@ -68,13 +81,13 @@ ul li{
 }
 
 .products .card{
-  max-width: 380px;
+  max-width: 370px;
   width: 100%;
   overflow: hidden;
   height: 570px;
   box-shadow: 0 0 5px #ccc;
   padding :15px;
-  margin: 15px 0;
+  margin: 15px;
   cursor: pointer;  
 }
 
@@ -95,12 +108,15 @@ ul li{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-
 }
 
 .card .box p{
   margin: 10px 0;
   line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .card .box h4{
@@ -159,7 +175,8 @@ ul li{
   font-size: 2rem;
 }
 
-.box-details button{
+.box-details button,
+.box-details .cart{
   border: 1px solid #555;
   outline: none;
   background: #333;
@@ -195,10 +212,10 @@ ul li{
 }
 
 .box-details .cart{
-  width: 200px;
-  height: 35px;
+  padding: 10px 25px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  display: inline-block;
 }
 
 @media (max-width: 700px) {
