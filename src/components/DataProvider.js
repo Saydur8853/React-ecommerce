@@ -16,7 +16,8 @@ export const  DataProvider = (props) => {
             "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
             "colors": ["red", "black", "teal"],
             "sizes": ["XL", "L", "M", "XM", "LX"],
-            "price": 101
+            "price": 101,
+            "count": 1
         },
         {
             "_id": "2",
@@ -31,7 +32,8 @@ export const  DataProvider = (props) => {
             "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
             "colors": ["red", "black", "teal"],
             "sizes": ["XL", "L", "M", "XM", "LX"],
-            "price": 102
+            "price": 102,
+            "count": 1
         },
         {
             "_id": "3",
@@ -46,7 +48,8 @@ export const  DataProvider = (props) => {
             "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
             "colors": ["red", "black", "teal"],
             "sizes": ["XL", "L", "M", "XM", "LX"],
-            "price": 103
+            "price": 103,
+            "count": 1
         },
         {
             "_id": "4",
@@ -61,7 +64,8 @@ export const  DataProvider = (props) => {
             "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
             "colors": ["red", "black", "teal"],
             "sizes": ["XL", "L", "M", "XM", "LX"],
-            "price": 104
+            "price": 104,
+            "count": 1
         },
         {
             "_id": "5",
@@ -76,7 +80,8 @@ export const  DataProvider = (props) => {
             "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
             "colors": ["red", "black", "teal"],
             "sizes": ["XL", "L", "M", "XM", "LX"],
-            "price": 105
+            "price": 105,
+            "count": 1
         },
         {
             "_id": "6",
@@ -91,7 +96,8 @@ export const  DataProvider = (props) => {
             "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
             "colors": ["red", "black", "teal"],
             "sizes": ["XL", "L", "M", "XM", "LX"],
-            "price": 106
+            "price": 106,
+            "count": 1
         }
     ])
 
