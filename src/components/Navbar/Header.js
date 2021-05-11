@@ -41,12 +41,6 @@ export default function Header() {
             </li>
 
           </ul>
-
-          <div className="menu" onClick= {toggleMenu}>
-          <img src={Menu} alt="" width="30"/>
-          </div>
-
-          
           <div className="cart-icon">
             <span>{cart.length}</span>
             <Link to ="/cart">
