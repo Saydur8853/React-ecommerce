@@ -34,6 +34,7 @@ header{
   margin-bottom: 20px;
 }
 
+
 a{
   text-decoration: none;
   text-transform: uppercase;
@@ -45,14 +46,22 @@ a:hover{
   color: lightseagreen;
 }
 
+
+
 ul li{
   list-style: none;
   display: inline-block;
   padding: 0 15px;
 }
+
+ul li .active{
+  color: red;
+}
+
 .menu{
   display: none;
 }
+
 
 .cart-icon{
   position: relative;

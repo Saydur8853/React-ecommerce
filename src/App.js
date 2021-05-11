@@ -7,7 +7,7 @@ import {DataProvider} from './components/DataProvider'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import Details from './components/Details'
-import CarouselContainer from './components/Carousel/CarouselContainer'
+import Home from './components/Home/Home'
 function App() {
   return (
     <DataProvider>
@@ -15,11 +15,10 @@ function App() {
       <Router>
 
         <Header/>
-        <div className="carousel"><CarouselContainer/></div>
-        
 
         <section>
           <Routes>
+            <Route exact path="/" element={<Home/>}/>
             <Route path="products" element={<Products/>}/>
             <Route path="product/:id" element={<Details/>}/>
             <Route path="Cart" element={<Cart/>}/>

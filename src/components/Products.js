@@ -1,7 +1,6 @@
 import React, {useContext} from 'react'
 import {DataContext} from './DataProvider'
 import {Link} from 'react-router-dom'
-//import image from '../assets/images/CardImage/img (1).jpg'
 
 
 export default function Products() {
