@@ -16,11 +16,11 @@ export default function Details() {
     const details = products.filter((product,index) =>{
         return product._id === id
     })
-    const handleMouseMove = e => {
-        const {left, top, width, height} = e.terget.getBoundingClientRect();
+    const handleMouseMove = e =>{
+        const {left, top, width, height} = e.target.getBoundingClientRect();
         const x = (e.pageX - left) / width * 100
         const y = (e.pageY - top) / height * 100
-       imgDiv.current.style.backgroundPosition = `${x}% ${y}%`
+        imgDiv.current.style.backgroundPosition = `${x}% ${y}%`
     } 
    
         return (
