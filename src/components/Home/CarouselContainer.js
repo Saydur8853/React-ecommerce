@@ -1,8 +1,9 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import image1 from '../../assets/images/BannerImages/img1.png';
-import image2 from '../../assets/images/BannerImages/img2.png';
-import image3 from '../../assets/images/BannerImages/img3.png';
+import image1 from '../../assets/images/BannerImages/img5.jpg';
+import image2 from '../../assets/images/BannerImages/img2.jpg';
+import image3 from '../../assets/images/BannerImages/img3.jpg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const CarouselContainer = () => {

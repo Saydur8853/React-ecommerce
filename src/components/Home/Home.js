@@ -5,8 +5,8 @@ import CarouselContainer from './CarouselContainer'
 export default function Home() {
     return (
         
-        <div>
-            <Link to="/"><CarouselContainer/></Link>
+        <div className="carousel">
+            <Link to="/home"><CarouselContainer/></Link>
         </div>
         
     )

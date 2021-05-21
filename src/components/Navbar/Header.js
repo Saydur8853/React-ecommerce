@@ -2,6 +2,7 @@ import React, {useState, useContext} from 'react'
 import Menu from '../../assets/svg/bars-solid.svg'
 import Close from '../../assets/svg/times-solid.svg'
 import Cart from '../../assets/svg/shopping-cart-solid.svg'
+import logo from '../../assets/images/logo.png'
 import {NavLink, Link} from 'react-router-dom'
 import {DataContext} from '../DataProvider' 
 
@@ -27,10 +28,10 @@ export default function Header() {
           </div>
 
         <div className="logo">
-          <h1><Link to="/">FLONE</Link></h1>
+          <h1 ><Link to="/home"> <img src= {logo} alt="Flone" /></Link></h1>
           </div>
           <ul style={styleMenu}>
-            <li><Link to="/">Home</Link></li>
+            <li><NavLink exact to="/home" activeClassName="active">Home</NavLink></li>
             <li><NavLink exact to="/products" activeClassName="active">Products</NavLink></li>
             <li><NavLink exact to="/about" activeClassName="active">About</NavLink></li>
             <li><NavLink exact to="/contact" activeClassName="active">Contact</NavLink></li>
