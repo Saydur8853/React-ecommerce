@@ -1,7 +1,8 @@
 import React, {useContext} from 'react'
 import {DataContext} from './DataProvider'
 import {Link} from 'react-router-dom'
-
+import wishlist from '../assets/svg/heart-regular.svg'
+import quickview from '../assets/svg/eye-regular.svg'
 
 export default function Products() {
   const value = useContext(DataContext)
@@ -19,9 +20,12 @@ export default function Products() {
                       <h3 title="{product.title}">
                         <Link to ={`/product/${product._id}`}>{product.title}</Link>
                       </h3>
-                      <p>{product.description}</p>
+
                       <h4>${product.price}</h4>
-                      <button onClick = {()=> addCart(product._id)}>Add to cart</button>
+                      <button onClick = {()=> addCart(product._id)}>Buy now</button>
+
+                      <button className="wish"> <img src={wishlist} alt="wishlist"/></button>
+                      <button className="view" > <img src={quickview} alt="quickview"/></button>
                     </div>
         
                   </div>

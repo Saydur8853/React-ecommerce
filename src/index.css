@@ -143,65 +143,225 @@ ul li .active{
   object-fit:cover;
 }
 
-/* RESPONSIVE */
-/* @media screen and (max-width: 800px){
-	.carousel-item{
-		height: 500px;
-	}
-	.carousel-caption{
-		letter-spacing: 2px;
-		line-height: 25px;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		-webkit-animation-name: posi2;
-		-webkit-animation-duration: 2s;
-		animation-name: posi2;
-		animation-duration: 2s;
-	}
+/* CARD*/
 
-	@-webkit-keyframes posi2 {
-	  from {top: 35%;}
-	  to {top: 50%;}
-	}
-
-
-	@keyframes posi2 {
-	  from {top: 35%;}
-	  to {top: 50%;}
-	}
-
-	.carousel-caption h3{
-		font-size: 40px;
-	}
-	.carousel-caption p{
-		font-size: 13px;
-	}
-
+.products{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5rem;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+}
+.products .card{
+  max-width: 280px;
+  width: 100%;
+  margin: 15px;
+  cursor: pointer;  
+  border-style: hidden;
 }
 
-@media screen and (max-width: 520px){
-	.carousel-caption h3{
-		font-size: 30px;
-		margin-bottom: 20px;
-	}
+.card img{
+  width: 100%;
+  height: 100%;
+  max-height: 340px;
+  display: block;
+  object-fit: cover;
 }
 
-*/
-/* img{
-	transform: scale(1.5, 1.5);
-	-webkit-animation-name: zoomin;
-  	-webkit-animation-duration: 40s;
-  	animation-name: zoomin;
-  	animation-duration: 40s;
-}
-@-webkit-keyframes zoomin {
-  from {transform: scale(1, 1);}
-  to {transform: scale(1.5, 1.5);}
+.card .box{
+  margin: 8px 0;
 }
 
+.card .box h3 {
+  
+  text-align: center;
+}
+.card .box a{
+  color: black;
+  font-size: 16px;
+  line-height: 30px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  font-weight: 400;
+}
 
-@keyframes zoomin {
-  from {transform: scale(1, 1);}
-  to {transform: scale(1.5, 1.5);}
-}  */
+.card .box a:hover{
+  color: #a749ff;
+}
+
+.card .box h4{
+  color: #000000;
+  font-size: 15px;
+  text-align: center;
+  line-height: 24px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+}
+
+.card .box button{
+  width: 60%;
+  border: none;
+  outline: none;
+  background: #a148f4;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.card .box .wish{
+  cursor: pointer;
+  width: 20%;
+  padding-left: 15px;
+  float: left;
+}
+
+.card .box .view{
+  cursor: pointer;
+  width: 20%;
+  padding-left: 15px;
+}
+
+.card .box img{
+  width: 23px;
+  height: 20px; 
+  filter: brightness(0) invert(1);
+}
+
+/* Details */
+.details{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.details .img-container {
+  width: 50%;
+  margin: 20px;
+  height: 450px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.details .img-container:hover{
+  background-size: 110%;
+  cursor:zoom-in;
+}
+
+.box-details{
+  max-width: 500px;
+  width: 100%;
+  margin: 20px;
+}
+
+.box-details h2{
+  color: #010101;
+  font-size: 24px;
+}
+
+.box-details button,
+.box-details .cart{
+  background: #333;
+  cursor: pointer;
+  color: white;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.sizes button{
+  width: 35px;
+  height: 35px;
+}
+
+.box-details p{
+  font-size: 15px;
+  line-height: 28px;
+  margin: 10px 0;
+}
+
+.box-details h3{
+  color: #fe5252;
+  font-size: 24px;
+}
+.box-details .thumb{
+  display: flex;
+  cursor: pointer;
+}
+.box-details .thumb img{
+  width: 100px;
+  margin: 10px;
+  
+}
+
+.box-details .cart{
+  padding: 10px 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+
+/* Cart */
+.cart{
+  position: relative;
+  border: 1px solid #ccc;
+  transform: scaleY(.90);
+}
+.amount {
+  border-style: ridge;
+  text-align: center;
+  width: 150px;
+  height: 80px;
+  margin-top: 20px;
+  
+}
+.amount span{
+  color: #8f8f8f;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.amount .count{
+  width: 30px;
+  height: 38px;
+  border-style: none;
+  outline: none;
+  color: #757272;
+  background: white;
+  cursor: pointer;
+  font-size: 20px;
+  padding-top: 12px;
+}
+
+.delete{
+  position: absolute;
+  margin-top: 20px;
+  cursor: pointer;
+  color: crimson;
+}
+
+.total{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total a{
+  background: #a749ff;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  margin: 100px;
+}
+.total h3{
+  margin-right: 50px;
+  color: crimson;
+}
